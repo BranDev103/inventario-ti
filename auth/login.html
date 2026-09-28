@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/login.css" />
+    <link rel="icon" href="../assets/img/logo.ico">
+    <title>Login</title>
+  </head>
+  <body>
+    <header>
+      <div class="three-body">
+        <div class="three-body__dot"></div>
+        <div class="three-body__dot"></div>
+        <div class="three-body__dot"></div>
+      </div>
+
+      <img src="../assets/img/image.png" alt="">
+    </header>
+
+    <main>
+      <div class="form-container">
+        
+        <form class="form" action="./validar.php" method="POST">
+            <img src="../assets/img/user.png" alt="">
+            <p class="title"></p>
+          <div class="input-group">
+            <label>Usuario</label>
+            <input type="text" name="usuario" autocomplete="off" required/>
+          </div>
+
+          <div class="input-group">
+            <label>Contraseña</label>
+            <input type="password" name="password" maxlength="8" required/>
+          </div>
+
+          <button type="submit" class="sign">Ingresar</button>
+        </form>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

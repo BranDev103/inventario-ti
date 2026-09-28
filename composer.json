@@ -1,0 +1,11 @@
+{
+    "name": "brandongl/inventario_ti",
+    "authors": [
+        {
+            "name": "BranDev08"
+        }
+    ],
+    "require": {
+        "picqer/php-barcode-generator": "^3.2"
+    }
+}
