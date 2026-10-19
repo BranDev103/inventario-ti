@@ -66,7 +66,7 @@ require "../../config/conexion.php";
                     </div>
 
                     <div class="container__section--input">
-                        <input type="text" name="correo">
+                        <input type="email" name="correo">
                         <label>Correo</label>
                     </div>
 

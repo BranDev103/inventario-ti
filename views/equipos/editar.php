@@ -1,7 +1,7 @@
 <?php
 require "../../config/conexion.php";
 require "../../middleware/auth.php";
-require "./config/conexion.php";
+
 
 
 $id = $_GET['id'];

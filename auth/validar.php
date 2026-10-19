@@ -2,6 +2,7 @@
 
 session_start();
 require "../../config/conexion.php";
+require "./config/conexion.php";
 
 $usuario = $_POST['usuario'];
 $password = $_POST['password'];
