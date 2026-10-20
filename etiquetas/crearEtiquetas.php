@@ -22,7 +22,8 @@ $rutaBarcode = __DIR__ . '/temp_' . $codigo . '.png';
 file_put_contents($rutaBarcode, $barcodeData);
 
 
-$pdf = new FPDF('L', 'mm', [170, 70]);
+//$pdf = new PDF('L', 'mm', [170, 170]);
+$pdf = new FPDF();
 $pdf->AddPage();
 
 $pdf->SetFont('Arial', 'BI', 10);
