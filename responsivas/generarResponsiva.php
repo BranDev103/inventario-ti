@@ -1,4 +1,3 @@
-
 <?php
 
 require("../libraries/fpdf/fpdf.php");
@@ -82,7 +81,7 @@ $pdf->Cell(30, 7, 'Clave:',1);
 $pdf->SetFont('Arial', '', 10);
 $pdf->Cell(40, 7, $equipo['clave'], 1);
 $pdf->SetFont('Arial', 'B', 10);
-$pdf->Cell(40, 7, 'Monitor:',1,0,'C');
+$pdf->Cell(40, 7, 'Monitor:',1,0,'B');
 $pdf->SetFont('Arial', '', 10);
 $pdf->Cell(40, 7, '',1,0,'C');
 $pdf->Cell(40, 7, '',1,1,'C');
@@ -93,7 +92,7 @@ $pdf->Cell(30, 7, 'Tipo:', 1);
 $pdf->SetFont('Arial', '', 10);
 $pdf->Cell(40, 7, $equipo['tipo'], 1);
 $pdf->SetFont('Arial', 'B', 10);
-$pdf->Cell(40, 7, 'Teclado:',1,0,'C');
+$pdf->Cell(40, 7, 'Teclado:',1,0,'B');
 $pdf->SetFont('Arial', '', 10);
 $pdf->Cell(40, 7, '',1,0,'C');
 $pdf->Cell(40, 7, '',1,1,'C');
@@ -103,7 +102,7 @@ $pdf->Cell(30, 7, 'Marca:', 1);
 $pdf->SetFont('Arial', '', 10);
 $pdf->Cell(40, 7, $equipo['marca'],1);
 $pdf->SetFont('Arial', 'B', 10);
-$pdf->Cell(40, 7, 'Mouse:',1,0,'C');
+$pdf->Cell(40, 7, 'Mouse:',1,0,'B');
 $pdf->SetFont('Arial', '', 10);
 $pdf->Cell(40, 7, '',1,0,'C');
 $pdf->Cell(40, 7, '',1,1,'C');
@@ -113,7 +112,7 @@ $pdf->Cell(30, 7, 'Modelo:', 1);
 $pdf->SetFont('Arial', '', 10);
 $pdf->Cell(40, 7, $equipo['modelo'], 1);
 $pdf->SetFont('Arial', 'B', 10);
-$pdf->Cell(40, 7, 'Accesorios:',1,0,'C');
+$pdf->Cell(40, 7, 'Accesorios:',1,0,'B');
 $pdf->SetFont('Arial', '', 10);
 $pdf->Cell(40, 7, '',1,0,'C');
 $pdf->Cell(40, 7, '',1,1,'C');
@@ -123,7 +122,7 @@ $pdf->Cell(30, 7, 'No. Serie:', 1);
 $pdf->SetFont('Arial', '', 10);
 $pdf->Cell(40, 7, $equipo['no_serie'],1);
 $pdf->SetFont('Arial', 'B', 10);
-$pdf->Cell(40, 7,  utf8_decode('Maletín:'),1,0,'C');
+$pdf->Cell(40, 7,  utf8_decode('Maletín:'),1,0,'B');
 $pdf->SetFont('Arial', '', 10);
 $pdf->Cell(40, 7, '',1,0,'C');
 $pdf->Cell(40, 7, '',1,1,'C');
@@ -213,6 +212,6 @@ $pdf->SetFont('Arial','B',11);
 $pdf->Cell(92,5,'Entrega',0,0,'C');
 $pdf->Cell(90, 5, 'Recibe', 0, 0, 'C');
 
+ob_clean();
 $pdf->Output('', 'responsiva.pdf',true);
 
-?>

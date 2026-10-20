@@ -83,7 +83,7 @@ function generarPrefijo($tipo)
 {
     $mapa = [
         'laptop' => 'LAP',
-        'escritorio' => 'PC',
+        'escritorio' => 'CPU',
         'telefono' => 'TEL',
         'impresora' => 'IMP',
         'switch' => 'SWT',
@@ -114,9 +114,9 @@ function generarCodigo($conexion, $tipo)
 
         $numero++;
 
-        return $prefijo . "-" . str_pad($numero, 3, "0", STR_PAD_LEFT);
+        return $prefijo . "-" . str_pad($numero, 4, "0", STR_PAD_LEFT);
     } else {
 
-        return $prefijo . "-001";
+        return $prefijo . "-0001";
     }
 }

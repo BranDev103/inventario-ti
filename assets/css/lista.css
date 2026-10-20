@@ -82,7 +82,7 @@ thead th:nth-child(5) {
 
 thead th:nth-child(6) {
   /*NO.SERIE*/
-  width: 6%;
+  width: 8%;
 }
 
 thead th:nth-child(7) {
@@ -102,7 +102,7 @@ thead th:nth-child(9) {
 
 thead th:nth-child(10) {
   /*ESTADO*/
-  width: 7.5%;
+  width: 6.5%;
 }
 
 thead th:nth-child(11) {
